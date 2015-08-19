@@ -26,7 +26,7 @@ const (
 var session *mgo.Session
 
 // init sets up the MongoDB environment.
-func init() {
+func obsolete_init() {
 	log.Printf("api : mongodb : init : Started : Host[%s] Database[%s]\n", mongoDBHosts, database)
 
 	// We need this object to establish a session to our MongoDB.
@@ -67,7 +67,8 @@ func Query(value interface{}) string {
 
 // GetSession returns a copy of the master session for use.
 func GetSession() *mgo.Session {
-	return session.Copy()
+	//return session.Copy()
+	return nil
 }
 
 // ExecuteDB the MongoDB literal function.

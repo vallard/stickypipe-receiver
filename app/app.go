@@ -45,13 +45,13 @@ func (a *App) Handle(verb, path string, handler Handler) {
 	// The function to execute for each request.
 	h := func(w http.ResponseWriter, r *http.Request, p map[string]string) {
 		c := Context{
-			Session:        GetSession(),
+			//		Session:        GetSession(),
 			ResponseWriter: w,
 			Request:        r,
 			Params:         p,
 			SessionID:      uuid.New(),
 		}
-		defer c.Session.Close()
+		//	defer c.Session.Close()
 
 		// Call the handler and handle any possible error.
 		if err := handler(&c); err != nil {

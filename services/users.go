@@ -1,16 +1,6 @@
 // Package services provides business and data processing.
 package services
 
-import (
-	"log"
-	"time"
-
-	"github.com/vallard/stickypipe-receiver/app"
-	"github.com/vallard/stickypipe-receiver/models"
-	"gopkg.in/mgo.v2"
-	"gopkg.in/mgo.v2/bson"
-)
-
 const usersCollection = "users"
 
 // usersService maintains the set of services for the users api.
@@ -20,6 +10,7 @@ type usersService struct{}
 var Users usersService
 
 // List retrieves a list of existing users from the database.
+/*
 func (usersService) List(c *app.Context) ([]models.User, error) {
 	log.Println(c.SessionID, ": services : Users : List : Started")
 
@@ -172,3 +163,4 @@ func (usersService) Delete(c *app.Context, userID string) error {
 	log.Println(c.SessionID, ": services : Users : Delete : Completed")
 	return nil
 }
+*/

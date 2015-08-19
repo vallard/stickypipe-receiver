@@ -12,8 +12,6 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
-
-	"gopkg.in/mgo.v2"
 )
 
 // Invalid describes a validation error belonging to a specific field.
@@ -30,7 +28,7 @@ type jsonError struct {
 
 // Context contains data associated with a single request.
 type Context struct {
-	Session *mgo.Session
+	//Session *mgo.Session
 	http.ResponseWriter
 	Request   *http.Request
 	Params    map[string]string

@@ -1,15 +1,6 @@
 // Package handlers contains the handler logic for processing requests.
 package handlers
 
-import (
-	"encoding/json"
-	"net/http"
-
-	"github.com/vallard/stickypipe-receiver/app"
-	"github.com/vallard/stickypipe-receiver/models"
-	"github.com/vallard/stickypipe-receiver/services"
-)
-
 // usersHandle maintains the set of handlers for the users api.
 type usersHandle struct{}
 
@@ -18,6 +9,7 @@ var Users usersHandle
 
 // List returns all the existing users in the system.
 // 200 Success, 404 Not Found, 500 Internal
+/*
 func (usersHandle) List(c *app.Context) error {
 	u, err := services.Users.List(c)
 	if err != nil {
@@ -100,3 +92,4 @@ func (usersHandle) Delete(c *app.Context) error {
 	c.Respond(u, http.StatusOK)
 	return nil
 }
+*/
