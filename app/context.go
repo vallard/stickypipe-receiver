@@ -66,10 +66,10 @@ func (c *Context) Respond(v interface{}, code int) {
 		// and return a 500 back to the caller.
 		log.Panicf("%v : api : Respond [%d] : Failed: %v", c.SessionID, code, err)
 	}
-
 	c.Header().Set("Content-Type", "application/json")
 	c.WriteHeader(code)
-	json.NewEncoder(c).Encode(data)
+	c.Write(data)
+	//json.NewEncoder(c).Encode(data)
 
 	log.Printf("%v : api : Respond [%d] : Completed", c.SessionID, code)
 }

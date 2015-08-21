@@ -1,6 +1,7 @@
 // Package servicestests implements users tests for the services layer.
 package servicestests
 
+/*
 import (
 	"testing"
 	"time"
@@ -94,3 +95,4 @@ func usersCreateRetrieveRemove(t *testing.T, c *app.Context) {
 		t.Log("\tShould NOT be able to retrieve the user back from the system.", tests.Succeed)
 	}
 }
+*/
