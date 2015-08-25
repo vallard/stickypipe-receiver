@@ -2,11 +2,8 @@
 package models
 
 type Pipe struct {
-	Switch   string
-	PipeType string
-}
-
-/*
+	Switch     string
+	PipeType   string
 	IfaceName  string
 	TimeStamp  int
 	IfOutPkts  float64
@@ -20,7 +17,7 @@ type Pipe struct {
 	IfInMcast  float64
 	IfInBcast  float64
 }
-*/
+
 // UserAddress contains information about a user's address.
 /*
 type UserAddress struct {
